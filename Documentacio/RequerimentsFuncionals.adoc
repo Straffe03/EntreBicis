@@ -1,0 +1,117 @@
+== [aqua]#3. REQUERIMENTS DEL PROJECTE#
+=== [aqua]#3.1. REQUERIMENTS NO FUNCIONALS#
+
+RN01: L’aplicació ha de ser multilloc, amb un màxim de 50 usuaris de tipus ciclista.
+RN02: L’aplicació ha de tenir l’arquitectura client-servidor  basada en una API REST desenvolupada amb Spring Boot al servidor. Tindrà dos clients: un front-end web per a l'administrador creat amb HTML+CSS+Thymeleaf i una app mòbil per a Android, desenvolupat en Kotlin i Jetpack Compose.
+RN03: L’administrador i/o el personal de manteniment de l’aplicació han de tenir el suport d’un sistema de logs (registres en fitxers) on es vagin desant els errors, excepcions, avisos o situacions que requereixin atenció. 
+RN04: El codi ha de ser optimitzat, eficient i sense redundàncies, seguint les bones pràctiques de desenvolupament per a cada tecnologia emprada.
+RN05: S’han d’utilitzar les classes, interfícies i mètodes i packages de forma òptima i adient,  seguint les bones pràctiques d’arquitectura de software.
+RN06: Les capçaleres de mètodes i classes rellevants (sobretot mètodes de negoci) han d’estar degudament comentades en format JavaDoc per al backend i KDoc per al codi Kotlin de l'app mobile.
+RN07: Qualsevol excepció que es produeix durant l’execució ha de ser degudament informada a l’usuari amb informació concreta i comprensible per l’usuari, en el llenguatge de l’aplicació.
+RN09: S’ha d'utilitzar el git/gitlab per implementar el projecte de forma òptima i adient. S’han de fer servir les següents branques: main/master, developer i branques per features, encara que el projecte el faci un únic integrant.
+RN10: Tots els merges de funcionalitats s’han de fer per merge-request a developer. Les branques fusionades s’eliminen després del merge-request.
+RN12: La comunicació entre el frontend Mobile i el backend s’ha de portar a terme mitjançant els principis REST, assegurant una arquitectura desacoblada i escalable.
+RN14: Tota la interfície d'usuari (UI) dels front-ends i tots els missatges d’avís, error i altres informacions mostrades a l’usuari han d’estar en català.
+
+==== [aqua]#3.1.1. Requisits del frontend Mobile#
+
+** RN20: L’app s’ha de desenvolupar utilitzant l’IDE Android Studio, implementant el llenguatge Kotlin per crear una aplicació nativa compatible amb dispositius Android.
+
+** RN21: L’app ha de seguir l’arquitectura Feature Layer juntament amb “Clean Architecture” (UI layer - Domain layer - Data layer).
+
+** RN22: En la capa IU ha de seguir la arquitectura moderna MVVM (Model-View-ViewModel) . El ViewModel ha de gestionar l'estat de l'aplicació amb MutableStateFlow.
+
+** RN23: S’ha d’utilitzar Jetpack Compose per implementar la interfície gràfica de l’app.
+
+** RN24: La interfície d'usuari (UI) de l’app ha de complir amb les directrius de disseny Material Design. El disseny visual ha de ser atractiu, amb coherència en colors, tipografies, icones i una distribució eficient dels elements. Totes les pantalles han de seguir el mateix estil per garantir una experiència homogènia.
+
+** RN25: Reutilització i coherència de components: Els elements visuals de la interfície han d'estar definits de manera modular i reutilitzable en diversos composables. Això garanteix coherència en l'estil i facilita el manteniment i escalabilitat del disseny. Els components repetitius, com botons, targetes, formularis o missatges emergents, han de seguir un patró estandarditzat per oferir una experiència visual uniforme.
+
+** RN26: Usabilitat (UX) i accessibilitat: La interfície de l’app ha de ser intuïtiva, eficient i fàcil d’usar. No hi pot haver passos innecessaris per accedir a les funcionalitats i s'ha de deixar molt clar què es pot fer en cada moment. A més, el disseny ha de mantenir coherència entre les funcionalitats disponibles i les restringides.
+
+** RN27: Fluïdesa garantida: L’app ha de respondre a les entrades de l'usuari en tot moment, evitant bloquejos o congelacions durant operacions intensives. S’han d’utilitzar mecanismes com a operacions asíncrones quan sigui necessari.
+
+** RN28: S’ha d'utilitzar un component visual de Navegació per facilitar l’accés a les funcionalitats principals de l’aplicació.
+
+** RN29: L’app s’ha de poder executar en qualsevol emulador i dispositiu mòbil amb sistema operatiu Android.
+
+==== [aqua]#3.1.2. Requisits backend#
+
+
+** RN41: L’estructura del projecte ha de ser de tipus Maven. 
+
+** RN42: Les capes de servei, lògica de negoci i de persistència han d’estar ubicades al backend.
+
+** RN43: El backend s’ha d’implementar mitjançant SpringBoot
+
+** RN44: El backend ha de ser portable i totalment funcional entre sistemes Linux i Windows.
+
+==== [aqua]#3.1.3. Requisits frontend web#
+
+** RN51: L'usuari administrador ha de poder accedir a l’aplicació mitjançant Internet i un navegador web.
+
+** RN52: Coherència de colors, fonts, icones, distribució i agrupació de components. 
+
+** RN53: Responsive: En cas de poder variar la grandària de la pantalla, s’ha d’adaptar el seu contingut de forma proporcionada.
+
+** RN54: Atenció a la diversitat (tenir en compte discapacitats visuals, motrius, dislèxia, etc…).
+
+** RN55: Fluïdesa: L’aplicació ha de respondre a les entrades de l'usuari en tot moment. Això vol dir que si ha de quedar “congelada” mentre realitza qualsevol operació l’usuari ha d’estar degudament informat.
+
+** RN56: Amigable i intuïtiu: Coherència i comprensió ràpida de les funcionalitats disponibles i no disponibles en cada moment, evitant que l’usuari pugui realitzar incoherències funcionals.
+
+==== [aqua]#3.1.4. Seguretat#
+
+** RN61: L’accés als front-ends han de disposar d’un sistema d’autenticació mitjançant usuari i contrasenya, assegurant intents d'accés no autoritzats.
+
+** RN63: L’emmagatzemament de la contrasenya d’usuari ha de ser un procés segur en tot moment utilitzant tècniques de hash robustes.
+
+** RN64: L’aplicació ha de protegir en tot moment les dades personals dels usuaris davant accessos no autoritzats tant de la part client com de la part d’API rest. Aquestes mai poden quedar exposades a altres usuaris de l’aplicació.
+
+==== [aqua]#3.1.5. Desplegament (deploy)#
+
+** RN71: El backend i el SGBD han d'estar allotjats al mateix servidor. Aquest ha de ser accessible des d'Internet i amb alta disponibilitat (24x7).
+
+** RN72: El desplegament de l’aplicació i del SGBD s’ha de poder realitzar mitjançant contenidors Doker. 
+
+=== [aqua]#3.2. REQUERIMENTS FUNCIONALS#
+
+** RF01: Validar ruta
+
+** RF02: Invalidar ruta
+
+** RF03: Iniciar ruta
+
+** RF04: Visualitzar detalls d'una ruta
+
+** RF05: Finalitzar ruta
+
+** RF06: Llistar rutes
+
+** RF9: Crear recompensa
+
+** RF11: Eliminar recompensa disponible
+
+** RF12: Reservar recompensa
+
+** RF14: Assignar recompensa
+
+** RF16: Recollir recompensa
+
+** RF18: Llistar recompenses
+
+** RF21: Mostrar detall de la recompensa 
+
+** RF22: Crear usuari
+
+** RF23: Modificar usuari
+
+** RF25: Llistar usuaris
+
+** RF26: Visualitzar detalls de l’usuari
+
+** RF27: Recupear password usuari
+
+** RF29: Login / logout usuari
+
+** RF36: Modificar paràmetres del sistema

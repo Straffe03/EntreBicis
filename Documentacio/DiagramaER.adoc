@@ -1,0 +1,3 @@
+== [aqua]#6. DIAGRAMA DE ENTITAT-RELACIO#
+
+image::DiagramaER.png[align="center"]

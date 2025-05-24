@@ -1,0 +1,2 @@
+== [aqua]#2. RESUM DEL PROJECTE#
+Farem una aplicació dedicada a promoure el transport sostenible via bicicletes. L’aplicació permetrà als ciclistes registrar les seves rutes i guanyar punts en funció dels quilòmetres recorreguts. Els punts es podran intercanviar per productes en botigues locals associades. L’administrador verificarà les dades i assegurarà la coherència dels trajectes.

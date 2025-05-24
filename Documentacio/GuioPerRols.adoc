@@ -1,0 +1,69 @@
+== [aqua]#4. GUIÓ PER ROLS#
+
+=== [aqua]#4.1. ROL CICLISTA#
+
+** RF03: Iniciar ruta
+
+** RF04: Visualitzar detalls ampliats d’una ruta 
+
+** RF05: Finalitzar ruta
+
+** RF06: Llistar rutes
+
+** RF12: Reservar recompensa
+
+** RF16: Recollir recompensa
+
+** RF18: Llistar recompenses
+
+** RF21: Mostrar detall de la recompensa
+
+** RF23: Modificar usuari 
+
+** RF26: Visualitzar detalls de l’usuari 
+
+** RF27: Recuperar password usuari
+
+** RF29: Login / Logout
+
+=== [aqua]#4.2. ROL ADMINISTRADOR#
+
+** RF01: Validar ruta
+
+** RF02: Invalidar ruta
+
+** RF03: Iniciar ruta
+
+** RF04: Visualitzar detalls ampliats d’una ruta 
+
+** RF05: Finalitzar ruta
+
+** RF06: Llistar rutes
+
+** RF09: Crear recompensa
+
+** RF11: Eliminar recompensa disponible
+
+** RF12: Reservar recompensa
+
+** RF14: Assignar recompensa
+
+** RF16: Recollir recompensa
+
+** RF18: Llistar recompenses
+
+** RF21: Mostrar detall de la recompensa
+
+** RF22: Crear usuari
+
+** RF23: Modificar usuari 
+
+** RF25: Llistar usuaris
+
+** RF26: Visualitzar detalls de l’usuari 
+
+** RF27: Recuperar password usuari
+
+** RF29: Login / Logout
+
+** RF36: Modificar paràmetres del sistema

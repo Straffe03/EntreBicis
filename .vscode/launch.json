@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EntreBicisApplication<EntreBicis>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "MarioOlaya.Projecte4.EntreBicis.EntreBicisApplication",
+            "projectName": "EntreBicis",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

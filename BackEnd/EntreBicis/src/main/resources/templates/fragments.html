@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+    <!-- Definir el fragmento de la barra superior -->
+    <div th:fragment="navbar">
+        <style>
+            .navbar {
+                background-color: #5a54d4;
+            }
+
+            .navbar-brand img {
+                width: 50px;
+            }
+
+            .nav-item .nav-link {
+                color: white;
+                font-weight: bold;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin: 5px;
+                background-color: #6a65e0;
+            }
+
+            .nav-item .nav-link:hover {
+                background-color: #827df5;
+            }
+
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        </style>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img th:src="@{/images/Logo.png}" alt="EntreBicis Logo" />
+                </a>
+                <div class="d-flex justify-content-center">
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item"><a class="nav-link" href="/parameters/update">PARAMETRES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/route/list">RUTES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/user/list">USUARIS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/reward/list">RECOMPENSES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/logout">LOGOUT</a></li>
+                    </ul>
+                </div>
+                <a th:href="@{'/user/view/' + ${#authentication.name}}">
+                    <img th:src="@{'/user/profile-image/' + ${#authentication.name}}" alt="Perfil" style="color: black;" class="profile-img">
+                </a>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>

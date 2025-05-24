@@ -1,0 +1,3 @@
+== [aqua]#7. DISSENY DE LA BASE DE DADES#
+
+image::DiagramaBBDD.png[align="center"]

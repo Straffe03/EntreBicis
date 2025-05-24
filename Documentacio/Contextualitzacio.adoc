@@ -1,0 +1,6 @@
+== [aqua]#1. CONTEXTUALITZACIÓ DE L'ORGANITZACIÓ CLIENT#
+
+El client és APROP GARRAF. Es tracta d'una associació d’educació mediambiental a escala local dissenyada per fomentar la sostenibilitat. 
+Aquesta associació organitza actes com ara trobades i xerrades sobre mobilitat sostenible i mecànica bàsica. La seva pàgina web és
+link:https://www.entrebicis.org/bicicletes[“EntreBicis.org/bicicletes”]. Fan iniciatives sostenibles com EntreBicis (projecte que farem nosaltres) entre altres.
+

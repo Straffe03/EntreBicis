@@ -1,0 +1,9 @@
+== [aqua]#5. DIAGRAMA DE ARQUITECTURA#
+
+image::Arquitectura.png[align="center"]
+
+Per a aquest projecte farem una arquitectura de packages dividida en 2 parts. La primera part serà la del FrontEnd Mobile on trobarem una divisió entre “Core” i les distintes “Features” (que seran les entitats). En Core trobarem totes les coses generals de cara a l'aplicació, coses que afectin a tot arreu o que siguin genèriques. En les features trobarem 3 subcarpetes, “Data”, “Domain”, “UI”. En Data trobarem l'api Rest, la instància de retrofit i el repositori de l'entitat. A Domain trobarem els casos d’ús (especificacions de negoci)
+i finalment a UI trobarem les pantalles i el ViewModel.
+La segona part serà la part de Java, que contindrà el BackEnd i a més tindrà el Frontend Web. El Frontend Web només tindrà els WebController mentre que el Backend tindrà subcarpetes per a l’Entitat, el Repositori, ApiController i Lògica. A entitat trobarem les diferents entitats necessàries per a l'aplicació, a repositori el repositori de cadascuna d’aquestes entitats, a lògica tindrem la lògica de negoci i totes les funcions lògiques que necessitarem i per últim a ApiController tindrem els controladors per l’api.
+
+image::Packages.png[align="center"]

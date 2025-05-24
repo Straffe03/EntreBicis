@@ -1,0 +1,55 @@
+:toc-title: INDEX
+:toc: left
+:toclevels: 3
+:hardbreaks:
+:imagesdir: ./images
+
+= Memoria EntreBicis Projecte 4
+
+image::Logo.jpg[align="center", width="250", height="250"]
+
+[.text-right]
+****
+**Noms:** Mario Olaya   
+**Any:** 2025  
+**Curs:** DAM2M 
+**Equip Docent:** Jordi Cardenas,
+Esther Sanchez,
+Manel Orós
+**Centre:** Institut Nicolau Copernic
+****
+
+//El include añadira los documentos seleccionados
+
+//include para adoc de contextualitzacio
+include::./Documentacio/Contextualitzacio.adoc[]
+
+//include para adoc de resum
+include::./Documentacio/Resum.adoc[]
+
+//include para adoc de requeriments funcionals
+include::./Documentacio/RequerimentsFuncionals.adoc[]
+
+//include para adoc de guio per rols
+include::./Documentacio/GuioPerRols.adoc[]
+
+//include para adoc de Diagrama de arquitectura
+include::./Documentacio/DiagramaArquitectura.adoc[]
+
+//include para adoc de Diagrama ER
+include::./Documentacio/DiagramaER.adoc[]
+
+//include para adoc de Disseny de la base de dades
+include::./Documentacio/DissenyBBDD.adoc[]
+
+//include para adoc de Casos d'us
+include::./Documentacio/CasosDUs.adoc[]
+
+//include para adoc de Mockups
+include::./Documentacio/Mockups.adoc[]
+
+//include para adoc de planificacio
+include::./Documentacio/Planificacio.adoc[]
+
+//include para adoc Video Promocional
+include::./Documentacio/VideoPromocional.adoc[]
